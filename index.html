@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Final</title>
+    <link rel="shortcut icon" href="Logo1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body>
+    <!------------- Navbar ------------->
+
+    <header class="header">
+      <a href="" class="logo"
+        ><i class="fas fa-utensils"></i> Comida venezolana</a
+      >
+
+      <form action="" class="search-form">
+        <input type="search" id="searchBox" placeholder="Buscar" />
+        <label for="searchBox" class="fas fa-search"></label>
+      </form>
+      <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="share-btn" class="fas fa-share"></div>
+        <div id="user-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <nav class="navbar">
+        <a href="">Home</a>
+        <a href="">Platos</a>
+        <a href="">Planes</a>
+        <a href="">Blog</a>
+        <a href="">Contacto</a>
+      </nav>
+    </header>
+
+    <!------------ Home --------------->
+
+    <section class="home" id="home">
+      <div class="image">
+        <!---- Imagen principal-- -->
+        <img src="Arepas.jpg" alt="" />
+      </div>
+
+      <!-- Contenido -->
+      <div class="content">
+        <h3>Los mejores platos del mundo!</h3>
+        <p>
+          La comida venezolana es una fusión de influencias indígenas, africanas
+          y españolas que ofrece una gran variedad de sabores y platos únicos.
+          La arepa, hecha de masa de maíz y rellena con queso, carne o pollo, es
+          un elemento básico del desayuno y la comida en Venezuela. El pabellón,
+          un plato típico, consta de arroz, frijoles negros, plátano maduro
+          frito y carne mechada, y es una deliciosa muestra de la gastronomía
+          venezolana. El patacón, hecho de plátano verde frito y prensado, se
+          sirve con diferentes toppings como carne mechada y queso rallado. Por
+          último, las hallacas, envueltas en hojas de plátano y rellenas de
+          carne, cerdo, pollo, aceitunas y pasas, son un plato navideño y una
+          muestra de la tradición culinaria venezolana. ¡La comida venezolana es
+          una experiencia culinaria que no te puedes perder!
+        </p>
+        <!-- Boton -->
+        <a href="" class="btn">Descubre el mejor sabor!</a>
+      </div>
+    </section>
+
+    <!---- Ordenes ---->
+
+    <section class="form-container">
+      <form id="order-form" action="">
+        <div class="inputBox">
+          <span>Donde</span>
+          <input type="text" placeholder="Buscar" required />
+        </div>
+        <div class="inputBox">
+          <span>Fecha</span>
+          <input type="date" required />
+        </div>
+        <div class="inputBox">
+          <span>Hora</span>
+          <input type="time" required />
+        </div>
+        <input type="submit" value="Ordena Ahora!" class="btn" />
+      </form>
+    </section>
+
+    <!----- Los Platos ----->
+
+    <section class="mainFood" id="mainFood">
+      <h1 class="heading">Nuestros <span>Platos</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="Cachapa.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Cachapa con queso</h3>
+          </div>
+          <div class="content">
+            <div class="price">$11.99 <span>$14.99</span></div>
+            <p>Deliciosa cachapa de maíz dulce rellena de queso.</p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Pabellon.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Pabellón Criollo</h3>
+          </div>
+          <div class="content">
+            <div class="price">$14.99 <span>$17.99</span></div>
+            <p>
+              El plato más tradicional de Venezuela. Arroz blanco, caraotas
+              negras, carne mechada y plátano maduro.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Pastelitos1.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Pastelitos rellenos</h3>
+          </div>
+          <div class="content">
+            <div class="price">$9.99 <span>$12.99</span></div>
+            <p>
+              Crujientes pastelitos fritos, rellenos de carne, pollo o queso.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Tequeños.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Tequeños rellenos</h3>
+          </div>
+          <div class="content">
+            <div class="price">$7.99 <span>$10.99</span></div>
+            <p>
+              Palitos de masa de harina de trigo rellenos de queso, fritos y
+              crujientes por fuera.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Patacon.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Patacón</h3>
+          </div>
+          <div class="content">
+            <div class="price">$15.99 <span>$19.99</span></div>
+            <p>
+              Plátano verde frito, machacado y prensado, relleno de carne, pollo
+              o vegetariano.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Empanadas.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Empanadas rellenas</h3>
+          </div>
+          <div class="content">
+            <div class="price">$9.99 <span>$13.99</span></div>
+            <p>Deliciosas empanadas rellenas de carne, pollo o queso.</p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Hallacas.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Hallacas</h3>
+          </div>
+          <div class="content">
+            <div class="price">$14.99 <span>$17.99</span></div>
+            <p>
+              Exquisitas hallacas venezolanas, hechas con masa de maíz rellenas
+              de carne, pollo y otros ingredientes.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Tostones.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Tostones</h3>
+          </div>
+          <div class="content">
+            <div class="price">$11.99 <span>$19.99</span></div>
+            <p>
+              Crujientes tostones de plátano maduro, acompañados de salsa de ajo
+              o guacamole.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Arepas1.jpg" alt="" />
+            <h3><i class="fas fa-utensils"></i> Arepas rellenas</h3>
+          </div>
+          <div class="content">
+            <div class="price">$12.99 <span>$15.99</span></div>
+            <p>
+              Deliciosas arepas rellenas de carne, pollo, queso y otros
+              ingredientes.
+            </p>
+            <a href="#" class="btn">Ordena Ahora!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------- Planes ------->
+    <section class="pricing" id="pricing">
+      <h1 class="heading">Nuestros <span>Planes</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <h3>Plan Básico</h3>
+          <div class="price">
+            <span>$</span>
+            <span class="amount">14,99</span>
+            <span>/mo</span>
+          </div>
+
+          <ul>
+            <li>2 Platos de tu elección</li>
+            <li>Delivery 30% Off</li>
+            <li>Incluye bebida</li>
+            <li>Incluye postres</li>
+          </ul>
+          <a href="" class="btn">Elegir plan</a>
+        </div>
+
+        <div class="box">
+          <h3>Plan Medium</h3>
+          <div class="price">
+            <span>$</span>
+            <span class="amount">19,99</span>
+            <span>/mo</span>
+          </div>
+
+          <ul>
+            <li>4 Platos de tu elección</li>
+            <li>Delivery 50% Off</li>
+            <li>Incluye bebida</li>
+            <li>Incluye postres</li>
+          </ul>
+          <a href="" class="btn">Elegir plan</a>
+        </div>
+
+        <div class="box">
+          <h3>Plan Full</h3>
+          <div class="price">
+            <span>$</span>
+            <span class="amount">29,99</span>
+            <span>/mo</span>
+          </div>
+
+          <ul>
+            <li>6 Platos de tu elección</li>
+            <li>Delivery 70% Off</li>
+            <li>Incluye bebida</li>
+            <li>Incluye postres</li>
+          </ul>
+          <a href="" class="btn">Elegir plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!--========== Contacto =========-->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Contáctanos</span></h1>
+
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="Nombre" />
+          <input type="email" placeholder="Email" />
+        </div>
+
+        <div class="inputBox">
+          <input type="number" placeholder="+58(XXX)-XXXXXXX" />
+          <input type="text" placeholder="Asunto" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+        <input type="submit" value="Enviar Mensaje" class="btn" />
+      </form>
+    </section>
+
+    <!--============= Blog ============-->
+    <section class="blogs" id="blogs">
+      <h1 class="heading">Conoce <span>Más</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="./Arepas.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Qué son las arepas y por qué son tan populares?</h3>
+            <a href="" class="btn">Aprende Más</a>
+            <div class="icons">
+              <a href=""><i class="fas fa-calendar"></i>24 de Marzo del 2023</a>
+              <a href=""
+                ><i class="fas fa-user"></i> escrito por Julio Mijares</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Caracas.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>
+              Por qué deberías conocer la impresionante ciudad de Caracas?
+            </h3>
+            <a href="" class="btn">Aprende Más</a>
+            <div class="icons">
+              <a href=""><i class="fas fa-calendar"></i>24 de Marzo del 2023</a>
+              <a href=""
+                ><i class="fas fa-user"></i> escrito por Julio Mijares</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="./Pabellon2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>5 cosas que NO sabías sobre la gastronomía venezolana!</h3>
+            <a href="" class="btn">Aprende Más</a>
+            <div class="icons">
+              <a href=""><i class="fas fa-calendar"></i>24 de Marzo del 2023</a>
+              <a href=""
+                ><i class="fas fa-user"></i> escrito por Julio Mijares</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--======= Footer =========-->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Nuestras sucursales</h3>
+          <a href=""><i class="fas fa-map-marker-alt"></i>Caracas</a>
+          <a href=""><i class="fas fa-map-marker-alt"></i>Valencia</a>
+          <a href=""><i class="fas fa-map-marker-alt"></i>Maracaibo</a>
+          <a href=""><i class="fas fa-map-marker-alt"></i>Mérida</a>
+        </div>
+
+        <div class="box">
+          <h3>Links</h3>
+          <a href=""><i class="fas fa-chevron-right"></i>Home</a>
+          <a href=""><i class="fas fa-chevron-right"></i>Restaurantes</a>
+          <a href=""><i class="fas fa-chevron-right"></i>Postres</a>
+          <a href=""><i class="fas fa-chevron-right"></i>Bebidas</a>
+        </div>
+
+        <div class="box">
+          <h3>Información de Contacto</h3>
+          <a href=""><i class="fas fa-phone"></i>+58 1243125</a>
+          <a href=""><i class="fas fa-phone"></i>+58 1234564</a>
+          <a href=""
+            ><i class="fas fa-envelope"></i>comidavenezolana@example.com</a
+          >
+          <a href=""
+            ><i class="fas fa-map-marker-alt"></i>Sede Principal, Caracas</a
+          >
+        </div>
+
+        <div class="box">
+          <h3>Síguenos!</h3>
+          <a href=""><i class="fab fa-facebook"></i>julioocmc</a>
+          <a href=""><i class="fab fa-instagram"></i>julioocmc</a>
+          <a href=""><i class="fab fa-twitter"></i>juliomijaress</a>
+        </div>
+      </div>
+
+      <!--==== copyright ====-->
+
+      <div class="rights">
+        Creado por <span>Julio Mijares</span> | Todos los derechos reservados
+      </div>
+    </section>
+
+    <script src="../index.js"></script>
+  </body>
+</html>
